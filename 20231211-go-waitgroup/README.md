@@ -1,0 +1,1 @@
+A code to the blog post [Go concurrency simplified. Part 2: Syncing goroutines with sync.WaitGroup](https://n0rdy.foo/posts/20231211/go-waitgroup/)

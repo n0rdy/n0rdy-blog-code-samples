@@ -1,0 +1,1 @@
+A code to the blog post [Go concurrency simplified. Part 1: Channels and goroutines](https://n0rdy.foo/posts/20231207/go-channels-and-goroutines/)
