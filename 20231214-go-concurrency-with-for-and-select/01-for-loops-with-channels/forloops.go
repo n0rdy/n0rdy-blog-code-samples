@@ -23,11 +23,7 @@ type Worker struct {
 }
 
 func (w *Worker) StartWorkingDay(deskChan chan string) {
-	for {
-		item, ok := <-deskChan
-		if !ok {
-			break
-		}
+	for item := range deskChan {
 		w.Process(item)
 	}
 

@@ -22,13 +22,12 @@ type Worker struct {
 	Name string
 }
 
-func (w *Worker) StartWorkingDay(deskChan chan string) {
-	for {
-		item, ok := <-deskChan
-		if !ok {
-			break
-		}
+func (w *Worker) StartWorkingDay(deskChan chan string, phoneChan chan string) {
+	select {
+	case item := <-deskChan:
 		w.Process(item)
+	case call := <-phoneChan:
+		fmt.Printf("Worker %s received a call: %s\n", w.Name, call)
 	}
 
 	fmt.Println("the desk is closed - time to go home")
@@ -46,13 +45,14 @@ func (w *Worker) Process(item string) {
 
 func main() {
 	deskChan := make(chan string)
+	phoneChan := make(chan string)
 	wg := &sync.WaitGroup{}
 
 	bobWorker := Worker{Name: "Bob"}
 
 	wg.Add(1)
 	go func() {
-		bobWorker.StartWorkingDay(deskChan)
+		bobWorker.StartWorkingDay(deskChan, phoneChan)
 		wg.Done()
 	}()
 
@@ -64,11 +64,18 @@ func main() {
 
 	queue := []Customer{lisa, eric, jenny, ben, zlatan}
 
+	go func() {
+		phoneChan <- "Has my package arrived?"
+		time.Sleep(1 * time.Second)
+		phoneChan <- "What about now?"
+	}()
+
 	for _, customer := range queue {
 		deskChan <- customer.GiveAway()
 	}
 
 	close(deskChan)
+	close(phoneChan)
 
 	wg.Wait()
 }

@@ -1,0 +1,1 @@
+A code to the blog post [Go concurrency simplified. Part 3: Managing channels with `for` loops and `select` statements](https://n0rdy.foo/posts/20231214/go-concurrency-with-for-and-select/)
