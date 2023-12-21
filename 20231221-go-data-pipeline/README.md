@@ -1,0 +1,1 @@
+A code to the blog post [Go concurrency simplified. Part 4: Post office as a data pipeline](https://n0rdy.foo/posts/20231221/go-data-pipeline/)
