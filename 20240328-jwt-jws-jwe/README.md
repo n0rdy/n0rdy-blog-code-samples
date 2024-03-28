@@ -1,0 +1,1 @@
+A code to the blog post [JWT, JWS, JWE and how to cook them](https://n0rdy.foo/posts/20240328/jwt-jws-jwe-and-how-to-cook-them/)
