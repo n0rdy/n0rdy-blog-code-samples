@@ -1,0 +1,1 @@
+A code to the blog post [Demystifying OTPs: the logic behind the offline generation of tokens](https://n0rdy.foo/posts/20241210/otp-offline-generation/)
