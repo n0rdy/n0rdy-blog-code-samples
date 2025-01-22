@@ -1,3 +1,7 @@
 .idea
 dist/
 *.iml
+/20250122-bcrypt-api/03-bcrypt-in-js/node_modules/
+/20250122-bcrypt-api/01-bcrypt-in-java/target/
+/20250122-bcrypt-api/05-bcrypt-in-rust/bcrypt-test/target/
+/20250122-bcrypt-api/04-bcrypt-in-python/.venv/

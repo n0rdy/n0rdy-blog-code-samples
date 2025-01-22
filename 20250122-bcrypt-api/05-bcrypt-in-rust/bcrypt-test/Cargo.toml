@@ -1,0 +1,9 @@
+[package]
+name = "bcrypt-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rand = "0.8"
+base64 = "0.22.1"
+bcrypt = "0.16.0"
