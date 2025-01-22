@@ -5,3 +5,5 @@ dist/
 /20250122-bcrypt-api/01-bcrypt-in-java/target/
 /20250122-bcrypt-api/05-bcrypt-in-rust/bcrypt-test/target/
 /20250122-bcrypt-api/04-bcrypt-in-python/.venv/
+/20250122-bcrypt-api/02-bcrypt-in-java/target/classes/BcriptSpringSecurity.class
+/20250122-bcrypt-api/02-bcrypt-in-java/target/classes/BcryptAtFavre.class
