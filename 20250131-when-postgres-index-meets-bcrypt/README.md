@@ -1,4 +1,4 @@
-A code to the blog post [When Postgres index meets Bcrypt](https://n0rdy.foo/posts/20250203/when-postgres-index-meets-bcrypt/)
+A code to the blog post [When Postgres index meets Bcrypt](https://n0rdy.foo/posts/20250131/when-postgres-index-meets-bcrypt/)
 
 ## How to run
 
