@@ -1,0 +1,23 @@
+volumes:
+  n0rdy-blog-202501-pg-db:
+
+networks:
+  n0rdy-blog-202501-network:
+
+services:
+
+  n0rdy-blog-202501-pg-db:
+    image: postgres:17.2-alpine
+    restart: always
+    environment:
+      - POSTGRES_ADMIN_PASSWORD=adminpassword
+      - POSTGRES_DB=n0rdyblog
+      - POSTGRES_USER=adminU
+      - POSTGRES_PASSWORD=adminP
+    ports:
+      - "5432:5432"
+    networks:
+      - n0rdy-blog-202501-network
+    volumes:
+      - n0rdy-blog-202501-pg-db:/var/lib/postgresql/data
+
