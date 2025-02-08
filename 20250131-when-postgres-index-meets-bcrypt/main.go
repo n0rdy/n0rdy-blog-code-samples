@@ -1,10 +1,10 @@
 package main
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/api"
-	"20250128-postgres-seq-scan-despite-indexing/db"
-	"20250128-postgres-seq-scan-despite-indexing/service"
-	"20250128-postgres-seq-scan-despite-indexing/utils"
+	"20250131-when-postgres-index-meets-bcrypt/api"
+	"20250131-when-postgres-index-meets-bcrypt/db"
+	"20250131-when-postgres-index-meets-bcrypt/service"
+	"20250131-when-postgres-index-meets-bcrypt/utils"
 	"context"
 	"errors"
 	"fmt"

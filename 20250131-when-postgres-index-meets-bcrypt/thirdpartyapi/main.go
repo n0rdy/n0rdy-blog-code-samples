@@ -1,8 +1,8 @@
 package main
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/common"
-	"20250128-postgres-seq-scan-despite-indexing/utils"
+	"20250131-when-postgres-index-meets-bcrypt/common"
+	"20250131-when-postgres-index-meets-bcrypt/utils"
 	"encoding/json"
 	"errors"
 	"fmt"

@@ -1,7 +1,7 @@
 package db
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/common"
+	"20250131-when-postgres-index-meets-bcrypt/common"
 	"context"
 	"errors"
 	"fmt"

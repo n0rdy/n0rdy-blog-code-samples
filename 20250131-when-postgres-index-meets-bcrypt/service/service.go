@@ -1,8 +1,8 @@
 package service
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/common"
-	"20250128-postgres-seq-scan-despite-indexing/db"
+	"20250131-when-postgres-index-meets-bcrypt/common"
+	"20250131-when-postgres-index-meets-bcrypt/db"
 	"encoding/json"
 	"fmt"
 	"github.com/google/uuid"

@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/common"
+	"20250131-when-postgres-index-meets-bcrypt/common"
 	"fmt"
 	"github.com/google/uuid"
 	"math/rand/v2"

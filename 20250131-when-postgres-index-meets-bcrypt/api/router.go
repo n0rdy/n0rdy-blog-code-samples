@@ -1,7 +1,7 @@
 package api
 
 import (
-	"20250128-postgres-seq-scan-despite-indexing/service"
+	"20250131-when-postgres-index-meets-bcrypt/service"
 	"encoding/json"
 	"github.com/go-chi/chi/v5"
 	"net/http"
